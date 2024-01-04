@@ -1,5 +1,10 @@
 const items = document.querySelectorAll(".accordion button");
 
+window.addEventListener('load', function () {
+  const preloader = document.querySelector('.preloader');
+  preloader.style.display = 'none';
+});
+
 function toggleAccordion() {
   const itemToggle = this.getAttribute('aria-expanded');
   

@@ -2,227 +2,395 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="style.css">
-    <title>Portfolio</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="style.css">
+  <title>Portfolio</title>
 
 </head>
 
 <body>
-  <div id="section1"></div>
-    <header class="container">
-        <div class="page-header">
-            <div class="logo">
-                <img src="logo/2.png" alt="" class="sidebar-logo">
-            </div>
-            <input type="checkbox" id="click">
+  <!--loading  bar-->
 
-            <label for="click" class="mainicon">
-                <div class="menu">
-                    <i class='bx bx-menu' ></i>
-                </div>
-            </label>
-            <ul>
-                <li><a href="#section1" class="active">Home</a></li>
-                <li><a href="#section2" class="active">About</a></li>
-                <li><a href="#section3" class="active">Projects</a></li>
-                <li><a href="#section4" class="active">Contact</a></li>
-            </ul>
-        </div>
-    </header>
-    <section class="container">
-        <div class="main">
-            <div class="detail">
-                <h3>Hi, It's Me</h3>
-                <h1>I'm <span style="color:#f9532d;">Koushik Balasani</span></h1>
-                <p>I'm a professional Web Developer. Our Main Goal to help & Satisficed the Local & Global Clients by web development solutions
-                </p>
-                <div class="social">
-                    <a href="https://www.linkedin.com/in/koushik-goud-632919283/"><i class='bx bxl-linkedin'></i></a>
-                    <a href="https://www.instagram.com/koushik__balasani/"><i class='bx bxl-instagram'></i></a>
-                    <a href="https://github.com/balasanikoushik"><i class='bx bxl-github' ></i></a>
-                    <a href="https://twitter.com/koushik4014"><i class='bx bxl-twitter' ></i></a>
-                </div>
-            </div>
-            <div class="img-sec">
-                <div class="images">
-                    <img src="logo/3.png" alt="" class="img-w">
-                </div>
-            </div>
+  <div class="preloader">
+    <div class="loader"></div>
+  </div>
+
+  <!--loading  bar-->
+
+
+  <div id="home"></div>
+  <header class="container">
+    <div class="page-header">
+      <div class="logo">
+        <div class="sidebar-logo">
+          <p>Koushik.dev</p>
         </div>
       </div>
-    </section>
-    <div id="section2"></div>
-    <hr style="border: 0;
-    background: black;
-    height: 1.5px;
-    margin: 50px 20px;">
+      <input type="checkbox" id="click">
 
-    <!--about section HTML Code-->
-<section class="contai">
+      <label for="click" class="mainicon">
+        <div class="menu">
+          <i class='bx bx-menu'></i>
+        </div>
+      </label>
+      <ul>
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about" class="active">About</a></li>
+        <li><a href="#projects" class="active">Projects</a></li>
+        <li><a href="#contact" class="active">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+  <section class="container">
     <div class="main">
-        <div class="detail">
-            <h3>Hi,</h3>
-            <h2>Summary About Me</h2>
-            <p>A fresher who specializes in both frontend development and PHP brings a versatile skill set to the world of web development. They are equipped with the ability to create captivating user interfaces and engaging user experiences using HTML, CSS, and JavaScript on the frontend. Simultaneously, they have a budding proficiency in PHP, a server-side scripting language, which allows them to handle data processing, database management, and server-side logic. With a strong foundation in frontend technologies and a growing expertise in PHP, they are poised to contribute to the complete development stack, ensuring not only visually appealing websites but also robust and dynamic backend functionality. Their enthusiasm for learning and adapting to the ever-evolving web landscape makes them a promising addition to any development team.
-            </p>
-  <br><br><br>
-  <div class="contai">
-    <h3>Common Questions Asked</h3>
-    <div class="accordion">
-      <div class="accordion-item">
-        <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">My Qualifications and Skills
-          </span><span class="icon" aria-hidden="true"></span></button>
-        <div class="accordion-content">
-          <p>I am a highly motivated and enthusiastic Electronics and Communication Engineering graduate, eager to kick
-            start my career in the industry. With a strong foundation in theoretical knowledge and hands-on experience,
-            I am well-equipped to contribute to the development and advancement of cutting-edge technologies in the
-            field. Proficient in programming languages like HTML, CSS, JAVA SCRIPTING, C and PHP. Skilled in simulation analytical thinker with the ability to troubleshoot and resolve technical
-            issues effectively. Proven teamwork abilities through various academic projects and internships, fostering
-            effective communication and collaboration.</p>
+      <div class="detail">
+        <h2>Full stack Web Developer <iconify-icon icon="noto:waving-hand-light-skin-tone"></iconify-icon></h2>
+        <p>I'm a professional Web Developer. Our Main Goal to help & Satisficed the Local & Global Clients by web
+          development solutions
+        </p>
+        <div class="social">
+          <div class="child child-1">
+            <button class="button btn-1">
+              <a href="https://www.linkedin.com/in/koushikbalasani/"><iconify-icon
+                  icon="logos:linkedin-icon"></iconify-icon></a>
+            </button>
+          </div>
+          <div class="child child-2">
+            <button class="button btn-2">
+              <a href="https://www.instagram.com/koushik__balasani/"><iconify-icon
+                  icon="skill-icons:instagram"></iconify-icon></a></button>
+          </div>
+          <div class="child child-3">
+            <button class="button btn-3">
+              <a href="https://github.com/balasanikoushik"><iconify-icon
+                  icon="skill-icons:github-dark"></iconify-icon></a></button>
+          </div>
+          <div class="child child-4">
+            <button class="button btn-4">
+              <a href="https://twitter.com/koushik4014"><iconify-icon
+                  icon="skill-icons:twitter"></iconify-icon></a></button>
+          </div>
+          <div class="child child-5">
+            <button class="button btn-5">
+              <a href="https://www.facebook.com/balasanikoushik"><iconify-icon
+                  icon="devicon:facebook"></iconify-icon></a>
+            </button>
+          </div>
+        </div>
+        <div class="tech">
+          <h3><b>Tech Stack |</b> <iconify-icon icon="vscode-icons:file-type-html"></iconify-icon> <iconify-icon
+              icon="vscode-icons:file-type-css"></iconify-icon> <iconify-icon
+              icon="vscode-icons:file-type-js-official"></iconify-icon> <iconify-icon icon="devicon:php"></iconify-icon>
+            <iconify-icon icon="devicon:mysql-wordmark"></iconify-icon> <iconify-icon icon="logos:react"></iconify-icon>
+            <iconify-icon icon="bi:github"></iconify-icon> <iconify-icon icon="devicon:jquery"></iconify-icon>
+            <iconify-icon icon="devicon:python"></iconify-icon>
+          </h3>
         </div>
       </div>
-      <div class="accordion-item">
-        <button id="accordion-button-2" aria-expanded="false"><span class="accordion-title">Introduction About Me
-          </span><span class="icon" aria-hidden="true"></span></button>
-        <div class="accordion-content">
-          <p>As a recent graduate with a strong foundation in software development, I am enthusiastic and ready to
-            embark on my career journey. My educational background has equipped me with in-depth knowledge and hands-on
-            experience in developing web applications using a diverse set of technologies, including React, CSS, PHP,
-            HTML5, and JavaScript. I am highly motivated to contribute my skills and creativity to collaborative
-            projects, learn from experienced professionals, and continuously grow as a software developer. With a
-            passion for problem-solving and a commitment to staying updated with industry trends, I am eager to make a
-            positive impact and thrive in a dynamic team environment.</p>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <button id="accordion-button-3" aria-expanded="false"><span class="accordion-title">Education</span><span
-            class="icon" aria-hidden="true"></span></button>
-        <div class="accordion-content">
-          <p>
-          <table border="2" class="bbody">
-            <tr>
-              <th>DEGREE/CERTIFICATIONS</th>
-              <th>INSTITUTE/BOARD</th>
-              <th>CGPA/PERCENTAGE</th>
-              <th>DURATION</th>
-            </tr>
-            <tr>
-              <td>B.Tech Electronic and Communication</td>
-              <td>Shathavahana University</td>
-              <td>65.3%</td>
-              <td>2019-2023</td>
-            </tr>
-            <tr>
-              <td>Senior Secondary</td>
-              <td>Telangana State Board</td>
-              <td>61%</td>
-              <td>2017-2019</td>
-            </tr>
-            <tr>
-              <td>Secondary</td>
-              <td>Telangana State Board</td>
-              <td>7.8CGPA</td>
-              <td>2016-2017</td>
-            </tr>
-          </table>
-          </p>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <button id="accordion-button-4" aria-expanded="false"><span class="accordion-title">My Projects</span><span class="icon" aria-hidden="true"></span></button>
-        <div class="accordion-content">
-          
-          <p>Payments Page : <a class="styled-button" href="https://balasanikoushik.github.io/payments-page/" target="_blank">Visit Website</a>
-
-            <br><br>
-            Music Player app : <a href="https://balasanikoushik.github.io/Musicplayer/" class="styled-button" target="_blank">Visit Website</a>
-           <br><br>
-            Calculator App : <a href=" https://balasanikoushik.github.io/calculator-app/" class="styled-button" target="_blank">Visit Website</a>
-            <br><br>
-            You Tube Thumbnail download : <a href="  https://koushikbalasani.000webhostapp.com/index.php" class="styled-button" target="_blank">Visit Website</a>
-            
-          </p>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <button id="accordion-button-5" aria-expanded="false"><span class="accordion-title">My Resume </span><span class="icon" aria-hidden="true"></span></button>
-        <div class="accordion-content">
-          <p><a href="https://docs.google.com/document/d/1NVQ4XQ5DamMmzm6rvZpclgk-qFxpYx3c/edit?usp=drive_link&ouid=115482639774963123789&rtpof=true&sd=true" download="your-resume.pdf" class="download">Download Resume</a>
-
-          </p>
+      <div class="img-sec">
+        <div class="images">
+          <img src="/logo/f-1.png" alt="" class="img-w">
         </div>
       </div>
     </div>
-    <div id="section3"></div>
-    <hr style="border: 0;
-    background: black;
-    height: 1.5px;
-    margin: 50px -270px;">
+    </div>
+  </section>
+  <div id="about"></div>
 
-<!--Projects section HTML Code-->
+  <!--about section HTML Code-->
 
-<div class="accordion-content">
-    <h2>My Projects</h2><br>
-    <br>
-    <p>
-        
-<b>Payments Page:</b>
-The payments page you shared is an innovative web payments page that has been designed with simplicity and security in mind. The payment interface closely resembles the familiar experience of using a debit/credit card. The platform is intuitive and engaging for a seamless payment process. You can find more information about this payments page on the following link    :<a class="styled-button" href="https://balasanikoushik.github.io/payments-page/" target="_blank">Visit Website</a>
-<br>
-<br>
-<b>Music Player app:</b>
-	The Music Player App is a feature-rich web application that allows users to enjoy their favorite music seamlessly. It provides an intuitive and visually appealing interface to organize, play, and control music tracks. The app has been designed with simplicity and ease of use in mind. It is easy to navigate and provides a great user experience. The app is also customization, allowing users to personalize their experience. You can find more information about this music player app on the following link    :    <a href="https://balasanikoushik.github.io/Musicplayer/" class="styled-button" target="_blank">Visit Website</a>
-<br>
-<br>
-<b>Calculator App:</b>
-The simple Calculator app is an eco-friendly web-based application that allows users to perform basic arithmetic operations such as addition, subtraction, multiplication, and division. It is an efficient tool for quick calculation on both desktop and mobile. The app has been designed with simplicity and ease of use in mind. It is easy to navigate and provides a great user experience. You can find more information about this calculator app on the following link   :    <a href=" https://balasanikoushik.github.io/calculator-app/" class="styled-button" target="_blank">Visit Website</a>
-<br>
-<br>
-<b>You Tube Thumbnail download:</b>
-The YouTube Thumbnail Download web app is an eco-friendly web-based application that allows users to download YouTube video thumbnails. It is a helpful tool for content creators and social media users. The app has been designed with simplicity and ease of use in mind. It is easy to navigate and provides a great user experience. You can find more information about this YouTube thumbnail download web app on the following link   :   <a href="  https://koushikbalasani.000webhostapp.com/index.php" class="styled-button" target="_blank">Visit Website</a>
-
-    </p>
+  <div class="about">
+    <img src="/logo/f-2.jpg" alt="" class="developer">
+    <div class="detail">
+      <h3>ABOUT ME</h3>
+      <h4>A dedicated Front-end Developer based in Hyderabad Telangana <img src="/logo/location.jpg" alt=""
+          class="location">
+      </h4>
+      <p class="intro">As a junior Front-end Developer. I possess an impressive arsenal of skills in HTML, CSS,
+        JAVASCRIPT,React, Tailwind, Python, PHP and MYSQL. I excel in designing and maintaining responsive websites that
+        offer a smooth user experience. My expertise lies in crafting dynamic, engaging interface through writing clean
+        and optimized code and utilizing cutting-edge development tools and technique I am also a team player who
+        thrives in collaborating with cross-functional teams to produce outstanding web application.
+      </p>
+    </div>
   </div>
-  <div id="section4"></div>
-  <hr style="border: 0;
-  background: black;
-  height: 1.5px;
-  margin: 50px -270px;">
-  </div><br><br>
-  <div class="contact">
-    <h2>Contact Me</h2>
-    <form id="contact-form">
+
+
+  <div id="projects"></div>
+  <!--Projects section HTML Code-->
+  <div class="projects" style="padding-bottom: 10px;">
+    <h2><b>PORTFOLIO</b></h2>
+    <h3>Each projects is a unique peace of development <iconify-icon icon="noto:puzzle-piece"></iconify-icon></h3>
+    <div class="project-deatils">
+      <div class="card">
+        <a href="https://los-angeles-seven.vercel.app/">
+          <div class="image"><img src="/logo/mountain.png" alt="" class="image"></div>
+          <div class="content">
+            <span class="title">
+              LOS ANGELES <iconify-icon icon="twemoji:snow-capped-mountain"></iconify-icon> </span>
+        </a>
+
+        <p class="desc">
+          The provided code snippets consist of HTML and CSS for a webpage. The HTML includes sections, a carousel,
+          and a footer, while the CSS defines styles for the layout, navigation, and media queries. The CSS also
+          includes styles for a sticky navigation bar and responsive design. The JavaScript at the end includes
+          Bootstrap and jQuery libraries for carousel functionality.
+        </p>
+
+        <a class="action" href="https://github.com/balasanikoushik/Los-Angeles">
+          Project Code <iconify-icon icon="icon-park:folder-code"></iconify-icon>
+          <span aria-hidden="true">
+            →
+          </span>
+        </a>
+      </div>
+    </div>
+
+    <div class="card">
+      <a href="https://translator-teal.vercel.app/">
+        <div class="image"><img src="/logo/translator.png" alt="" class="image"></div>
+        <div class="content">
+          <span class="title">
+            TRANSLATOR <iconify-icon icon="carbon:ibm-watson-language-translator"></iconify-icon>
+          </span>
+      </a>
+
+      <p class="desc">
+        The provided code snippets consist of HTML and CSS for a webpage. The HTML includes sections, a carousel, and a
+        footer, while the CSS defines styles for the layout, navigation, and media queries. The CSS also includes styles
+        for a sticky navigation bar and responsive design. The JavaScript at the end includes Bootstrap and jQuery
+        libraries for carousel functionality.
+      </p>
+
+      <a class="action" href="https://github.com/balasanikoushik/translator">
+        Project Code <iconify-icon icon="icon-park:folder-code"></iconify-icon>
+        <span aria-hidden="true">
+          →
+        </span>
+      </a>
+    </div>
+  </div>
+
+  <div class="card">
+    <a href="https://thumbnail-download-youtube-seven.vercel.app/">
+      <div class="image"><img src="/logo/yt download.png" alt="" class="image"></div>
+      <div class="content">
+
+        <span class="title">
+          YOUTUBE THUMBNAIL DOWNLOADER <iconify-icon icon="openmoji:youtube"></iconify-icon><iconify-icon icon="flat-color-icons:download"></iconify-icon>
+        </span>
+    </a>
+
+    <p class="desc">
+      The provided code snippets consist of HTML and CSS for a webpage. The HTML includes sections, a carousel, and a
+      footer, while the CSS defines styles for the layout, navigation, and media queries. The CSS also includes styles
+      for a sticky navigation bar and responsive design. The JavaScript at the end includes Bootstrap and jQuery
+      libraries for carousel functionality.
+    </p>
+
+    <a class="action" href="https://github.com/balasanikoushik/thumbnail-download-youtube">
+      Project code <iconify-icon icon="icon-park:folder-code"></iconify-icon>
+      <span aria-hidden="true">
+        →
+      </span>
+    </a>
+  </div>
+  </div>
+  </div>
+  </div>
+
+  <div class="extra-section">
+    <div class="accordion">
+      <div class="accordion-item">
+        <button><span class="accordion-title">Remaining projects
+          </span></button>
+        <div class="accordion-content">
+          <div class="line-1">
+            <div class="extra-card">
+              <div class="header">
+                <div class="image"><img src="/logo/task manager.png" class="image"></div>
+                <div class="content">
+                  <span class="title">TASK MANAGER</span> <iconify-icon icon="fluent-mdl2:task-manager"></iconify-icon>
+                  <p class="message">Efficient web-based Task Manager with user-friendly task creation, listing, and editing. Offers status tracking, reminders, and dark mode, ensuring a personalized. <br><span class="langauge"><b>PHP,   HTML,   CSS,  MYSQL,  JS  </b></span></p>
+                </div>
+                <div class="actions">
+                  <a href="https://koushiktaskmanager.000webhostapp.com/"><button class="desactivate" type="button">LIVE DEMO</button></a>
+                  <a href="https://github.com/balasanikoushik/Task-manager-php"><button class="cancel" type="button">SOURCE CODE</button></a>
+                </div>
+              </div>
+            </div>
+            <div class="extra-card">
+              <div class="header">
+                <div class="image"><img src="/logo/tx-edtior.png" class="image"></div>
+                <div class="content">
+                  <span class="title">TEXT EDITOR</span> <iconify-icon icon="arcticons:simpletexteditor"></iconify-icon>
+                  <p class="message">The codebase consists of HTML, CSS, and JavaScript. The HTML file includes a textarea for text input, and the JavaScript file handles opening and saving text files.<br><span class="langauge"><b>HTML,   CSS,  JS  </b></span></p>
+                </div>
+                <div class="actions">
+                  <a href="https://text-editor-self-seven.vercel.app/"><button class="desactivate" type="button">LIVE DEMO</button></a>
+                  <a href="https://github.com/balasanikoushik/text-editor"><button class="cancel" type="button">SOURCE CODE</button></a>
+                </div>
+              </div>
+            </div>
+            <div class="extra-card">
+              <div class="header">
+                <div class="image"><img src="/logo/Temperature convertor.png" class="image"></div>
+                <div class="content">
+                  <span class="title">TEMPERATURE CONVERTOR</span> <iconify-icon icon="openmoji:temperature-taking"></iconify-icon>
+                  <p class="message">It uses HTML, CSS, and JavaScript to convert temperatures between Celsius, Fahrenheit, and Kelvin, and changes the background based on the input temperature.<br><span class="langauge"><b>HTML,   CSS,  JS  </b></span></p>
+                </div>
+                <div class="actions">
+                  <a href="https://temperature-convertor-rhwe.vercel.app/"><button class="desactivate" type="button">LIVE DEMO</button></a>
+                  <a href="https://github.com/balasanikoushik/Temperature-convertor"><button class="cancel" type="button">SOURCE CODE</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="line-2">
+            <div class="extra-card">
+              <div class="header">
+                <div class="image"><img src="/logo/landing page.png" class="image"></div>
+                <div class="content">
+                  <span class="title">LANDING PAGE</span> <iconify-icon icon="emojione:page-with-curl"></iconify-icon>
+                  <p class="message">This is a single-page landing page with multiple sections, a navigation menu, and smooth scrolling functionality. It uses CSS for styling and animations.<br><span class="langauge"><b>HTML,   CSS,  JS </b></span></p>
+                </div>
+                <div class="actions">
+                  <a href="https://landing-page-two-navy.vercel.app/"><button class="desactivate" type="button">LIVE DEMO</button></a>
+                  <a href="https://github.com/balasanikoushik/Landing-page"><button class="cancel" type="button">SOURCE CODE</button></a>
+                </div>
+              </div>
+            </div>
+            <div class="extra-card">
+              <div class="header">
+                <div class="image"><img src="/logo/background.png" class="image"></div>
+                <div class="content">
+                  <span class="title">BACKGROUND GENERATOR</span> <iconify-icon icon="fluent:color-background-20-filled"></iconify-icon>
+                  <p class="message">This application is a simple program that performs a specific task using minimal code and resources, designed for ease of understanding and use.<br><span class="langauge"><b>HTML,   CSS,  JS </b></span></p>
+                </div>
+                <div class="actions">
+                  <a href="https://background-generator-delta.vercel.app/"><button class="desactivate" type="button">LIVE DEMO</button></a>
+                  <a href="https://github.com/balasanikoushik/background-generator"><button class="cancel" type="button">SOURCE CODE</button></a>
+                </div>
+              </div>
+            </div>
+            <div class="extra-card">
+              <div class="header">
+                <div class="image"><img src="/logo/fb-clone.png" class="image"></div>
+                <div class="content">
+                  <span class="title">FACEBOOK CLONE</span> <iconify-icon icon="icon-park:facebook"></iconify-icon>
+                  <p class="message">The application is a Facebook clone with a login form, styling, and language options. It includes form validation using JavaScript.<br><span class="langauge"><b>HTML,   CSS,  JS </b></span></p>
+                </div>
+                <div class="actions">
+                  <a href=""><button class="desactivate" type="button">LIVE DEMO</button></a>
+                  <a href=""><button class="cancel" type="button">SOURCE CODE</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="line-2">
+            <div class="extra-card">
+              <div class="header">
+                <div class="image"><img src="/logo/calculator.png" class="image"></div>
+                <div class="content">
+                  <span class="title">CALCULATOR</span> <iconify-icon icon="flat-color-icons:calculator"></iconify-icon>
+                  <p class="message">This application is a simple program designed to perform a specific task like mathematic <b> addition, subtraction, division, multiplication </b>using minimal code and resources.<br><span class="langauge"><b>HTML,   CSS,  JS </b></span></p>
+                </div>
+                <div class="actions">
+                  <a href="https://calculator-app-woad-eight.vercel.app/"><button class="desactivate" type="button">LIVE DEMO</button></a>
+                  <a href="https://github.com/balasanikoushik/calculator-app"><button class="cancel" type="button">SOURCE CODE</button></a>
+                </div>
+              </div>
+            </div>
+            <div class="extra-card">
+              <div class="header">
+                <div class="image"><img src="/logo/login.png" class="image"></div>
+                <div class="content">
+                  <span class="title">LOGIN PAGE</span> <iconify-icon icon="line-md:login"></iconify-icon>
+                  <p class="message">This is a simple login form with HTML, CSS, and JavaScript. It validates username and password on form submission. Styling includes a background image and form design.<br><span class="langauge"><b>HTML,   CSS,  JS </b></span></p>
+                </div>
+                <div class="actions">
+                  <a href="https://log-in-page-dusky.vercel.app/"><button class="desactivate" type="button">LIVE DEMO</button></a>
+                  <a href="https://github.com/balasanikoushik/Log-in-Page"><button class="cancel" type="button">SOURCE CODE</button></a>
+                </div>
+              </div>
+            </div>
+            <div class="extra-card">
+              <div class="header">
+                <div class="image"><img src="/logo/rg-form.png" class="image"></div>
+                <div class="content">
+                  <span class="title">REGISTRATION PAGE</span> <iconify-icon icon="medical-icon:i-registration"></iconify-icon>
+                  <p class="message">This is a registration form webpage with CSS for styling, including a popup for successful submission and JavaScript for form submission handling.<br><span class="langauge"><b>HTML,   CSS,  JS </b></span></p>
+                </div>
+                <div class="actions">
+                  <a href="https://registration-form-mu-five.vercel.app/"><button class="desactivate" type="button">LIVE DEMO</button></a>
+                  <a href="https://github.com/balasanikoushik/Registration-form"><button class="cancel" type="button">SOURCE CODE</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <br><br>
+  <div id="contact"></div>
+    <div class="contact">
+      <h2>Contact Me</h2>
+      <form id="contact-form">
         <div class="form-group">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
         </div>
         <div class="form-group">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
         </div>
         <div class="form-group">
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
         </div>
         <button type="submit">Submit</button>
-    </form>
-    <p class="note"><b>NOTE :</b> It is a sample contact me form which will not send any type of message to me. Thank you</p>
-    <div id="response"></div>
-</div><br><br><br><br>
-  <h4>Social Media Handles To Contact Me</h4>
-  <div class="social">
-    <a href="https://www.linkedin.com/in/koushik-goud-632919283/"><i class='bx bxl-linkedin'></i></a>
-    <a href="https://www.instagram.com/koushik__balasani/"><i class='bx bxl-instagram'></i></a>
-    <a href="https://github.com/balasanikoushik"><i class='bx bxl-github'></i></a>
-    <a href="https://twitter.com/koushik4014"><i class='bx bxl-twitter'></i></a>
+      </form>
+      <p class="note"><b>NOTE :</b> It is a sample contact me form which will not send any type of message to me.
+        Thank
+        you</p>
+      <div id="response"></div>
+    </div>
   </div>
-
-
-  <script src="script.js"></script>
+  <div class="parent">
+    <div class="child child-1">
+      <button class="button btn-1">
+        <a href="https://www.linkedin.com/in/koushikbalasani/"><iconify-icon
+            icon="logos:linkedin-icon"></iconify-icon></a>
+      </button>
+    </div>
+    <div class="child child-2">
+      <button class="button btn-2">
+        <a href="https://www.instagram.com/koushik__balasani/"><iconify-icon
+            icon="skill-icons:instagram"></iconify-icon></a></button>
+    </div>
+    <div class="child child-3">
+      <button class="button btn-3">
+        <a href="https://github.com/balasanikoushik"><iconify-icon
+            icon="skill-icons:github-dark"></iconify-icon></a></button>
+    </div>
+    <div class="child child-4">
+      <button class="button btn-4">
+        <a href="https://twitter.com/koushik4014"><iconify-icon icon="skill-icons:twitter"></iconify-icon></a></button>
+    </div>
+    <div class="child child-5">
+      <button class="button btn-5">
+        <a href="https://www.facebook.com/balasanikoushik"><iconify-icon icon="devicon:facebook"></iconify-icon></a>
+      </button>
+    </div>
+  </div>
 </body>
+<script src="script.js"></script>
+<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 
 </html>
