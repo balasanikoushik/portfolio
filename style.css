@@ -255,7 +255,7 @@ li a:hover {
 /*about section css*/
 .about {
   display: flex;
-  padding: 30vh;
+  padding: 10%;
   padding-bottom: 0px;
   padding-top: 25vh;
 }
@@ -621,6 +621,10 @@ textarea {
   align-items: center;
 }
 
+.footer{
+  display: flex;
+}
+
 .child {
   width: 50px;
   height: 50px;
@@ -655,4 +659,201 @@ button {
   align-items: center;
   transform: translate3d(0px, 0px, 15px) perspective(180px) rotateX(-35deg) translateY(2px);
   border-radius: 50%;
+}
+
+
+@media screen and (max-width: 1024px) {
+  .container {
+      padding: 0 3.4rem;
+  }
+}
+
+@media screen and (max-width: 968px) and (min-width: 768px) {
+
+  .extra-section{
+    width: auto;
+  }
+  .page-container {
+      padding: 0 0.6rem;
+  }
+
+  .img-sec{
+    margin: 15vh 5vh;
+  }
+
+  .about{
+      display: flex;
+      padding: 12vh;
+      flex-direction: column;
+      justify-content: center;
+  }
+
+  .developer{
+    width: auto;
+  }
+
+  .projects{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .extra-section{
+    width: auto;
+  }
+
+  .contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width:768px)and (min-width: 600px)  {
+
+  header {
+      height: auto;
+  }
+
+  ul {
+      background: #fff;
+      width: 100%;
+      height: 100vh;
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      top: 3.4rem;
+      left: -100%;
+      z-index: -11111;
+  }
+
+  .menu {
+      display: block;
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #244D61;
+  }
+
+  #click:checked~ul {
+      left: 0%;
+      transition: all 0.3s ease;
+  }
+  
+  .container{
+    margin: auto;
+  }
+
+  .image img{
+    display: flex;
+    justify-content: center;
+  }
+
+  .main {
+      margin-top: 2rem;
+  }
+
+  .extra-section{
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 600px) and (min-width: 50px)  {
+  *{
+    width: auto;
+  }
+
+  header {
+    height: auto;
+}
+
+ul {
+    background: #fff;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    top: 3.4rem;
+    left: -100%;
+    z-index: -11111;
+}
+
+.menu {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #244D61;
+}
+
+#click:checked~ul {
+    left: 0%;
+    transition: all 0.3s ease;
+}
+
+.container{
+  padding: 0vh;
+}
+
+.img-sec{
+  margin: 15vh 5vh;
+}
+  
+.about{
+  display: flex;
+  flex-direction: column;
+  padding: 10vh 5vh;
+}
+
+.developer{
+  width: auto;
+}
+  .extra-section{
+    width: auto;
+  }
+
+.project-deatils{
+  display: flex;
+  flex-direction: column;
+}
+
+.line-1, .line-2 {
+  display: flex;
+  flex-direction: column;
+  margin: 5vh;
+  width: auto;
+}
+
+.contact{
+  width: auto;
+  max-width: 50vh;
+  display: flex;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  flex-direction: column;
+}
+
+.note{
+  width: auto;
+  padding: 0 10vh;
+}
+
+.parent{
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding: auto;
+}
+
+.footer{
+  display: flex;
+  flex-direction: row;
+  padding: 3vh;
+}
+
 }
