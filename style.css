@@ -194,7 +194,7 @@ li a:hover {
   height: 100%;
   border-radius: 50%;
   overflow: hidden;
-  margin: 25vh;
+  margin: auto;
 }
 
 .images {
@@ -742,6 +742,10 @@ button {
   
   .container{
     margin: auto;
+  }
+
+  .img-sec{
+    margin: 30vh 10vh;
   }
 
   .image img{
