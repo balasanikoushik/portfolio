@@ -6,6 +6,15 @@
   --brd-color: #0a58ca;
   --nav-text: #120f2d;
   --highlight: #eba504;
+  --background-dark: #2d3548;
+  --text-light: rgba(255,255,255,0.6);
+  --text-lighter: rgba(255,255,255,0.9);
+  --spacing-s: 8px;
+  --spacing-m: 16px;
+  --spacing-l: 24px;
+  --spacing-xl: 32px;
+  --spacing-xxl: 64px;
+  --width-container: 1200px;
 }
 
 * {
@@ -142,7 +151,7 @@ li a:hover {
 }
 
 .container{
-  padding: 5%;
+  padding: 5% 3%;
 }
 
 .detail{
@@ -159,7 +168,7 @@ li a:hover {
 }
 
 .main h2 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 600;
   margin-top: 60px;
   -webkit-animation: text-pop-up-top 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -272,7 +281,7 @@ li a:hover {
 .about h4 {
   margin-bottom: 10px;
   padding-left: 20px;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 
 .about h3 {
@@ -310,244 +319,407 @@ li a:hover {
   padding-bottom: 10px;
 }
 
-.project-deatils {
+/*tabs css*/
+
+.warpper{
+  margin: 5rem 0rem;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tab{
+  cursor: pointer;
+  padding:10px 20px;
+  margin:0px 2px;
+  background:#000;
+  display:inline-block;
+  color:#fff;
+  border-radius:3px 3px 0px 0px;
+  box-shadow: 0 0.5rem 0.8rem #00000080;
+}
+.panels{
+  background:#fffffff6;
+  box-shadow: 0 2rem 2rem #00000080;
+  min-height:200px;
+  width:100%;
+  border-radius:3px;
+  overflow:hidden;
+  padding:20px;  
+}
+.panel{
+  display:none;
+  animation: fadein .8s;
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+.panel-title{
+  font-size:1.5em;
+  font-weight:bold
+}
+.radio{
+  display:none;
+}
+#one:checked ~ .panels #one-panel,
+#two:checked ~ .panels #two-panel,
+#three:checked ~ .panels #three-panel,
+#four:checked ~ .panels #four-panel,
+#five:checked ~ .panels #five-panel{
+  display:block
+}
+#one:checked ~ .tabs #one-tab,
+#two:checked ~ .tabs #two-tab,
+#three:checked ~ .tabs #three-tab,
+#four:checked ~ .tabs #four-tab,
+#five:checked ~ .tabs #five-tab{
+  background:#fffffff6;
+  color:#000;
+  border-top: 3px solid #000;
+}
+
+
+/*frontend card css*/
+.cards {
+  margin: 20px;
+  width: 100%;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;
+  -webkit-justify-content: center;
+}
+
+.card--1 .card__img, .card--1 .card__img--hover {
+  background-image: url('/logo/mountain.png');
+}
+
+.card--2 .card__img, .card--2 .card__img--hover {
+  background-image: url('./logo/background.png');
+}
+
+.card--3 .card__img, .card--3 .card__img--hover {
+  background-image: url('./logo/fb-clone.png');
+}
+
+.card--4 .card__img, .card--4 .card__img--hover {
+  background-image: url('./logo/rs.png');
+}
+
+.card--5 .card__img, .card--5 .card__img--hover {
+  background-image: url('./logo/py-cd.png');
+}
+
+.card--6 .card__img, .card--6 .card__img--hover {
+  background-image: url('./logo/landing\ page.png');
+}
+
+.card--7 .card__img, .card--7 .card__img--hover {
+  background-image: url('./logo/rg-form.png');
+}
+
+.card--8 .card__img, .card--8 .card__img--hover {
+  background-image: url('./logo/login.png');
+}
+
+
+.card__img {
+visibility: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 235px;
+border-top-left-radius: 12px;
+border-top-right-radius: 12px;
+
+}
+
+.card__info-hover {
+  position: absolute;
+  padding: 16px;
+width: 100%;
+opacity: 0;
+top: 0;
+}
+
+.card__img--hover {
+transition: 0.2s all ease-out;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+position: absolute;
+  height: 235px;
+border-top-left-radius: 12px;
+border-top-right-radius: 12px;
+top: 0;
+
+}
+.card {
+margin-right: 25px;
+transition: all .4s cubic-bezier(0.175, 0.885, 0, 1);
+background-color: #fff;
+  width: 33.3%;
+position: relative;
+border-radius: 12px;
+overflow: hidden;
+box-shadow: 0px 13px 10px -7px rgba(0, 0, 0,0.1);
+}
+.card:hover {
+box-shadow: 0px 30px 18px -8px rgba(0, 0, 0,0.1);
+  transform: scale(1.10, 1.10);
+}
+
+.card__info {
+z-index: 2;
+background-color: #fff;
+border-bottom-left-radius: 12px;
+border-bottom-right-radius: 12px;
+ padding: 16px 24px 24px 24px;
+}
+
+.card__category {
+  font-family: 'Raleway', sans-serif;
+  font-size: 13px;
+  letter-spacing: 2px;
+  font-weight: 500;
+color: #868686;
+}
+
+.card__title {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-family: 'Roboto Slab', serif;
+}
+
+.card:hover .card__img--hover {
+  height: 100%;
+  opacity: 0.3;
+}
+
+.card:hover .card__info {
+  background-color: transparent;
+  position: relative;
+}
+
+.card:hover .card__info-hover {
+  opacity: 1;
+}
+
+
+/*Full stack css*/
+
+
+.hero-section{
+  align-items: flex-start;
+  display: flex;
+  min-height: 100%;
+  justify-content: center;
+  padding: var(--spacing-xxl) var(--spacing-l);
+}
+
+.card-grid{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-column-gap: var(--spacing-l);
+  grid-row-gap: var(--spacing-l);
+  max-width: var(--width-container);
+  width: 100%;
+}
+
+@media(min-width: 540px){
+  .card-grid{
+    grid-template-columns: repeat(2, 1fr); 
+  }
+}
+
+@media(min-width: 960px){
+  .card-grid{
+    grid-template-columns: repeat(4, 1fr); 
+  }
+}
+
+.card-blur{
+  list-style: none;
+  position: relative;
+}
+
+.card-blur:before{
+  content: '';
+  display: block;
+  padding-bottom: 150%;
+  width: 100%;
+}
+
+.card__background{
+  background-size: cover;
+  background-position: center;
+  border-radius: var(--spacing-l);
+  bottom: 0;
+  filter: brightness(0.75) saturate(1.2) contrast(0.85);
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform-origin: center;
+  transform: scale(1) translateZ(0);
+  transition: 
+    filter 200ms linear,
+    transform 200ms linear;
+}
+
+.card-blur:hover .card__background{
+  transform: scale(1.05) translateZ(0);
+}
+
+.card-grid:hover > .card-blur:not(:hover) .card__background{
+  filter: brightness(0.5) saturate(0) contrast(1.2) blur(20px);
+}
+
+.card__content{
+  left: 0;
+  padding: var(--spacing-l);
+  position: absolute;
+  top: 0;
+}
+
+.card__heading{
+  background-image: linear-gradient(to right, rgb(255, 247, 0), rgb(0, 255, 17));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;}
+
+.card_category{
+  color: var(--text-light);
+  font-size: 0.9rem;
+  margin-bottom: var(--spacing-s);
+  text-transform: uppercase;
+}
+
+/*contact me css*/
+
+.php-cards{
   display: flex;
   justify-content: center;
 }
 
-/*project card css*/
-
-.card {
-  margin: 30px;
-  max-width: 300px;
-  border-radius: 1.5rem;
-  background-color: #e7e7e7;
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-  border: 1px solid;
+.card-php {
+  margin: 0 100px;
+  width: 190px;
+  height: 254px;
+  border-radius: 20px;
+  background: #f5f5f5;
+  position: relative;
+  padding: 1.8rem;
+  border: 2px solid #c3c6ce;
+  transition: 0.5s ease-out;
+  overflow: visible;
+ }
+ 
+ .card-phpdetails {
+  color: black;
+  height: 100%;
+  gap: .5em;
+  display: grid;
+  place-content: center;
+ }
+ 
+ .card-phpbutton {
+  transform: translate(-50%, 125%);
+  width: 40%;
+  border-radius: 1rem;
+  border: none;
+  text-align: center;
+  justify-content: center;
+  background-color: #008bf8;
+  color: #fff;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  opacity: 0;
+  transition: 0.3s ease-out;
+ }
+ 
+.img-phpcards{
+  width: 100%;
+  object-fit: cover;
 }
 
-.card a {
-  text-decoration: none
-}
+.text-body {
+  color: rgb(134, 134, 134);
+  padding-bottom: 5vh;
+ }
 
-.card:hover {
+ /*Text*/
+ .text-phptitle {
+  font-size: 1rem;
+  font-weight: bold;
+ }
+ 
+ /*Hover*/
+ .card-php:hover {
   border-color: #008bf8;
   box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
-}
-
-.card:hover .card-button {
+ }
+ 
+ .card-php:hover .card-phpbutton {
   transform: translate(-50%, 50%);
   opacity: 1;
-}
+ }
 
-.content {
-  padding: 1.1rem;
-}
+/*figma card css*/
 
-.image {
-  border-radius: 1.5rem;
-  object-fit: cover;
+.figma-cards{
   width: 100%;
-  height: 150px;
-  background-color: rgb(239, 205, 255);
+  display: flex;
+  justify-content: space-around;
 }
 
-.title {
-  color: #111827;
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-  font-weight: 600;
-}
+.card-figma {
+  width: 400px;
+  height: 254px;
+  background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
+  border-radius: 20px;
+  transition: all .3s;
+ }
+ 
+ .card-figma2 {
+  width: 400px;
+  height: 254px;
+  border-radius: 20px;
+  transition: all .2s;
+ }
+ 
+ .card-figma2:hover {
+  transform: scale(0.98);
+  border-radius: 20px;
+ }
+ 
+ .card-figma:hover {
+  box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
+ }
 
-.desc {
-  margin-top: 0.5rem;
-  color: #6B7280;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-}
+/*figma card css*/
 
-.action {
-  display: inline-flex;
-  margin-top: 1rem;
-  color: #ffffff;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  font-weight: 500;
+
+/*figma card css*/
+
+.prepare{
+  display: flex;
+  font-size: 3rem;
+  justify-content: center;
   align-items: center;
-  gap: 0.25rem;
-  background-image: linear-gradient(to right, rgb(255, 0, 0), rgb(0, 0, 255));
-  background-clip: padding-box;
-  color: black;
-  padding: 4px 8px;
-  border-radius: 4px;
+  padding: 10vh 0;
 }
 
-.action span {
-  transition: .3s ease;
-}
+/*figma card css*/
 
-.action:hover span {
-  transform: translateX(4px);
-}
-
-/*project card css*/
-
-
-/*extra section css*/
-
-.extra-section {
-  margin: 0 auto;
-  padding: 0;
-  width: 60rem;
-
-}
-
-.accordion .accordion-item {
-  border-bottom: 1px solid #e5e5e5;
-}
-
-.accordion .accordion-item button[aria-expanded=true] {
-  border-bottom: 1px solid #03b5d2;
-}
-
-.accordion button {
-  position: relative;
-  display: block;
-  text-align: left;
-  width: 100%;
-  padding: 1em 0;
-  color: #7288a2;
-  font-size: 1.15rem;
-  font-weight: 400;
-  border: none;
-  background: none;
-  outline: none;
-}
-
-.accordion button:hover,
-.accordion button:focus {
-  cursor: pointer;
-  color: #03b5d2;
-}
-
-.accordion button:hover::after,
-.accordion button:focus::after {
-  cursor: pointer;
-  color: #03b5d2;
-  border: 1px solid #03b5d2;
-}
-
-.accordion button .accordion-title {
-  padding: 1em 1.5em 1em 0;
-  display: flex;
-  justify-content: center;
-}
-
-.accordion button[aria-expanded=true] {
-  color: #03b5d2;
-}
-
-.accordion button[aria-expanded=true]+.accordion-content {
-  opacity: 1;
-  max-height: 600em;
-  transition: all 200ms linear;
-  will-change: opacity, max-height;
-}
-
-.accordion .accordion-content {
-  opacity: 0;
-  max-height: 0;
-  overflow: hidden;
-  transition: opacity 200ms linear, max-height 200ms linear;
-  will-change: opacity, max-height;
-}
-
-.line-1 {
-  display: flex;
-}
-
-.line-2{
-  display: flex;
-}
-
-.langauge{
-  color: black;
-}
-
-/*extra section css*/
-
-.header {
-  padding: 1.25rem 1rem 1rem 1rem;
-  background-color: #ffffff;
-}
-
-
-.content {
-  margin-top: 0.75rem;
-  text-align: center;
-}
-
-.title {
-  color: #111827;
-  font-size: 1rem;
-  font-weight: 600;
-  line-height: 1.5rem;
-}
-
-.message {
-  margin-top: 0.5rem;
-  color: #6B7280;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-}
-
-.actions {
-  margin: 0.75rem 1rem;
-  background-color: #F9FAFB;
-}
-
-.actions .desactivate {
-  display: inline-flex;
-  padding: 0.5rem 1rem;
-  background-color: #DC2626;
-  color: #ffffff;
-  font-size: 1rem;
-  line-height: 1.5rem;
-  font-weight: 500;
-  justify-content: center;
-  width: 100%;
-  border-radius: 0.375rem;
-  border-width: 1px;
-  border-color: transparent;
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-}
-
-.actions .cancel {
-  display: inline-flex;
-  margin-top: 0.75rem;
-  padding: 0.5rem 1rem;
-  background-color: #ffffff;
-  color: #374151;
-  font-size: 1rem;
-  line-height: 1.5rem;
-  font-weight: 500;
-  justify-content: center;
-  width: 100%;
-  border-radius: 0.375rem;
-  border: 1px solid #D1D5DB;
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-}
-
-/*Hover*/
-.extra-card:hover {
-  border: 1px solid black;
-  box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
-}
-
-.extra-card:hover .card-button {
-  transform: translate(-50%, 100%);
-  opacity: 1;
-}
 
 /*contact me css*/
 

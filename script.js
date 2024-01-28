@@ -19,6 +19,16 @@ function toggleAccordion() {
 
 items.forEach(item => item.addEventListener('click', toggleAccordion));
 
+var usernameInput = document.getElementById("name");
+
+usernameInput.addEventListener("input", function() {
+  usernameInput.setCustomValidity("");
+});
+
+usernameInput.oninvalid = function(event) {
+  event.target.setCustomValidity("Would you mind sharing your name, please?");
+};
+
 document.addEventListener("DOMContentLoaded", function () {
     const contactForm = document.getElementById("contact-form");
     const responseDiv = document.getElementById("response");
