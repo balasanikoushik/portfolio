@@ -1,23 +1,14 @@
-const items = document.querySelectorAll(".accordion button");
-
 window.addEventListener('load', function () {
   const preloader = document.querySelector('.preloader');
   preloader.style.display = 'none';
 });
 
-function toggleAccordion() {
-  const itemToggle = this.getAttribute('aria-expanded');
-  
-  for (i = 0; i < items.length; i++) {
-    items[i].setAttribute('aria-expanded', 'false');
-  }
-  
-  if (itemToggle == 'false') {
-    this.setAttribute('aria-expanded', 'true');
-  }
+const text = document.getElementById('circular-text');
+text.innerHTML = text.textContent.replace(/\S/g,"<span>$&</span>");
+const ele = document.querySelectorAll('span');
+for(var i = 1;i<ele.length;i++){
+  ele[i].style.transform="rotate("+i*16.5+"deg)";
 }
-
-items.forEach(item => item.addEventListener('click', toggleAccordion));
 
 var usernameInput = document.getElementById("name");
 
