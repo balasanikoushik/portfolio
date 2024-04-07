@@ -446,6 +446,10 @@ li a:hover {
   -webkit-justify-content: center;
 }
 
+.fd-row{
+  display: flex;
+}
+
 .card--1 .card__img,
 .card--1 .card__img--hover {
   background-image: url('/logo/mountain.png');
@@ -525,7 +529,6 @@ li a:hover {
   margin-right: 25px;
   transition: all .4s cubic-bezier(0.175, 0.885, 0, 1);
   background-color: #fff;
-  width: 33.3%;
   position: relative;
   border-radius: 12px;
   overflow: hidden;
@@ -1159,7 +1162,7 @@ button {
     flex-direction: column;
   }
   input{
-    width: autos;
+    width: auto;
   }
 
   .note {
