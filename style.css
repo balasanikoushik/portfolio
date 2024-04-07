@@ -168,7 +168,7 @@ li a:hover {
 }
 
 .main h2 {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   font-weight: 600;
   margin-top: 60px;
   -webkit-animation: text-pop-up-top 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -204,7 +204,7 @@ li a:hover {
   background-position: center center;
   background-repeat: no-repeat;
   border: 3px solid black;
-  animation: morph 8s ease-in-out infinite;
+  animation: morph 5s ease-in-out infinite;
   border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
   position: relative;
   transition: all 1s ease-in-out;
@@ -295,7 +295,7 @@ li a:hover {
   display: grid;
   margin-top: 28vh;
   margin-left: -35px;
-  color: #fd4766;
+  color: brown;
   z-index: 23;
 }
 
@@ -317,14 +317,6 @@ li a:hover {
   transform-origin: 0 100px;
 }
 
-.logo-svg{
-  width: 20vh;
-  position: absolute;
-  border-radius: 50vh;
-  z-index: 9;
-  margin: 32vh 22vh;
-  overflow: hidden;
-}
 
 .intro {
   padding-left: 20px;
@@ -351,7 +343,7 @@ li a:hover {
 }
 
 .location {
-  height: 50px;
+  height: 30px;
 }
 
 /*projects css*/
@@ -680,7 +672,7 @@ li a:hover {
 }
 
 .card-php {
-  margin: 0 100px;
+  margin: 0 20px;
   width: 190px;
   height: 254px;
   border-radius: 20px;
@@ -914,6 +906,24 @@ button {
 
 @media screen and (max-width: 968px) and (min-width: 768px) {
 
+  .main{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .img-section{
+    height: 60vh;
+    margin: 10vh 3vh;
+  }
+
+  .hero-img{
+    margin: 3rem;
+  }
+
+  .developer, .text-rotate{
+    display: none;
+  }
+
   .extra-section {
     width: auto;
   }
@@ -933,18 +943,33 @@ button {
     justify-content: center;
   }
 
-  .developer {
-    width: auto;
-  }
-
   .projects {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
 
-  .extra-section {
+  .cards{
+    display: flex;
+  }
+
+  .card{
+    width: 80%;
+    margin: 5vh;
+  }
+
+  .php-cards{
+    width: 100%;
+  }
+
+  .figma-cards{
     width: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-figma{
+    margin: 5vh 20vh;
   }
 
   .contact {
@@ -955,6 +980,10 @@ button {
 }
 
 @media screen and (max-width:768px)and (min-width: 600px) {
+
+  .developer, .text-rotate{
+    display: none;
+  }
 
   header {
     height: auto;
@@ -1002,7 +1031,28 @@ button {
     margin-top: 2rem;
   }
 
-  .extra-section {
+  .cards{
+    display: flex;
+  }
+
+  .card{
+    width: 80%;
+    margin: 5vh;
+  }
+
+  .php-cards{
+    width: 100%;
+  }
+
+  .figma-cards{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-figma{
+    margin: 5vh 20vh;
+  }.extra-section {
     width: auto;
   }
 }
@@ -1049,6 +1099,10 @@ button {
     margin: 15vh 5vh;
   }
 
+  .developer, .text-rotate{
+    display: none;
+  }
+
   .about {
     display: flex;
     flex-direction: column;
@@ -1059,26 +1113,43 @@ button {
     width: auto;
   }
 
-  .extra-section {
-    width: auto;
-  }
-
-  .project-deatils {
+  .cards{
     display: flex;
     flex-direction: column;
   }
 
-  .line-1,
-  .line-2 {
+  .card-grid{
     display: flex;
     flex-direction: column;
+  }
+
+  .card{
+    width: 80%;
     margin: 5vh;
+  }
+
+  .figma-cards{
     width: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .php-cards{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-php{
+    margin: 5vh;
+    justify-content: center;
+  }
+
+  .card-figma{
+    margin: 5vh;
   }
 
   .contact {
     width: auto;
-    max-width: 50vh;
     display: flex;
     height: auto;
     justify-content: center;
@@ -1086,6 +1157,9 @@ button {
     padding: 0;
     margin: 0;
     flex-direction: column;
+  }
+  input{
+    width: autos;
   }
 
   .note {
