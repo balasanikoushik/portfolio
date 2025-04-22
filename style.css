@@ -167,12 +167,43 @@ li a:hover {
   align-items: center;
 }
 
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-10px);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  75% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
 .main h2 {
   font-size: 2.2rem;
   font-weight: 600;
   margin-top: 60px;
-  -webkit-animation: text-pop-up-top 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-  animation: text-pop-up-top 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  -webkit-animation: shake 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite;
+  animation: shake 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite;
+}
+.main h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 20px;
+  color: #000;
+}
+
+.main h4 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-top: 10px;
+  color: #000;
 }
 
 
@@ -289,32 +320,15 @@ li a:hover {
 
 .developer {
   height: 50vh;
-}
-
-.text-rotate {
-  display: grid;
-  margin-top: 28vh;
-  margin-left: -35px;
-  color: brown;
-  z-index: 23;
-}
-
-#circular-text{
-  height: 190px;
-  font-size: 25px;
-  animation: animate 5s linear infinite;
-}
-@keyframes animate{
-  from{
-    transform: rotate(0deg);
-  }
-  to{
-    transform: rotate(360deg);
-  }
-}
-.text-rotate span{
-  position: absolute;
-  transform-origin: 0 100px;
+  width: 50vh;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border: 3px solid black;
+  animation: morph 5s ease-in-out infinite;
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  position: relative;
+  transition: all 1s ease-in-out;
 }
 
 
@@ -580,14 +594,6 @@ li a:hover {
     transform 200ms linear;
 }
 
-.card-blur:hover .card__background {
-  transform: scale(1.05) translateZ(0);
-}
-
-.card-grid:hover > .card-blur:not(:hover) .card__background {
-  filter: brightness(0.5) saturate(0) contrast(1.2) blur(20px);
-}
-
 .card__content {
   left: 0;
   padding: var(--spacing-l);
@@ -715,6 +721,19 @@ li a:hover {
 
 /*figma card css*/
 
+/*react css*/
+
+.prepare {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5vh;
+  font-size: 50px;
+}
+
+/*react css*/
+
+
 /*contact me css*/
 
 .contact-me {
@@ -825,6 +844,51 @@ button {
   align-items: center;
   transform: translate3d(0px, 0px, 15px) perspective(180px) rotateX(-35deg) translateY(2px);
   border-radius: 50%;
+}
+
+.thankyou {
+  display: flex;
+  justify-content: center;
+  font-style: bold;
+  font-size: 30px;
+  color: #1317eb;
+}
+.note {
+  padding: 0;
+  margin-top: 5vh;
+  font-size: 1.2rem;
+  color: #000;
+}
+
+.form-group {
+  margin-bottom: 1em;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 0.5em;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 0.5em 1em;
+  cursor: pointer;
+}
+
+/* Spinner styles */
+.spinner {
+  width: 30px;
+  height: 30px;
+  border: 4px solid #ccc;
+  border-top: 4px solid #333;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
 
 

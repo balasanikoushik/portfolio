@@ -3,13 +3,6 @@ window.addEventListener('load', function () {
   preloader.style.display = 'none';
 });
 
-const text = document.getElementById('circular-text');
-text.innerHTML = text.textContent.replace(/\S/g,"<span>$&</span>");
-const ele = document.querySelectorAll('span');
-for(var i = 1;i<ele.length;i++){
-  ele[i].style.transform="rotate("+i*16.5+"deg)";
-}
-
 var usernameInput = document.getElementById("name");
 
 usernameInput.addEventListener("input", function() {
@@ -30,11 +23,25 @@ document.addEventListener("DOMContentLoaded", function () {
         // Get form data
         const formData = new FormData(contactForm);
 
-        // Simulate sending the form data to the server (you'd typically send this to a server using AJAX or fetch)
-        setTimeout(function () {
-            responseDiv.innerHTML = "Message sent successfully!";
-            contactForm.reset();
-        }, 1000); // Simulate a 1-second delay
-
     });
+});
+
+document.getElementById('contact-form').addEventListener('submit', function(e) {
+  e.preventDefault();
+
+  const loading = document.getElementById('loading');
+  const success = document.getElementById('success');
+  const submitBtn = document.getElementById('submit-btn');
+
+  // Show spinner
+  loading.style.display = 'block';
+  success.style.display = 'none';
+  submitBtn.disabled = true;
+
+  setTimeout(() => {
+    loading.style.display = 'none';
+    success.style.display = 'block';
+    submitBtn.disabled = false;
+    this.reset();
+  }, 2500); // 2.5 seconds delay
 });
